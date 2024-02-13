@@ -4,9 +4,14 @@
   width: 70%;
 }
 section {
+  display: flex;
+  flex-direction: row; /* או column, תלוי בכיוון שאתה רוצה לסדר את האלמנטים */
+  justify-content: center; /* ממרכז את האלמנטים בציר הראשי */
+  align-items: center; /* ממרכז את האלמנטים בציר המשני */
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 header {
   text-align: center;
   padding: 20px;
@@ -62,6 +67,10 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: rgb(143, 250, 155);
+  max-width: 100%;
+  overflow-x: hidden;
+  max-height: 100%;
+  overflow-y: hidden;
 }
 
 .flex-container {
@@ -71,6 +80,9 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 200px;
   height: 320px;
   margin: 10px;
@@ -81,7 +93,7 @@ body {
 
 .card img {
   width: 100%;
-  max-height: 180px;
+  height: 127px;
   object-fit: cover;
 }
 
@@ -133,11 +145,12 @@ body {
   background-color: #555;
 }
 footer {
-  background-image: url("image/KIWI\ BACKGROUND.webp");
+  background-image: url("image/KIWI-FOOTER.jpeg");
   background-position: center;
-  background-size: cover;
   padding: 50px;
   position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .footer-nav {
@@ -155,19 +168,25 @@ footer {
 }
 
 .footer-nav li {
-  margin-right: 20px;
+  margin-right: 10vw;
 }
 
 .footer-nav a {
-  font-size: 20px;
+  font-size: 2.7vw;
   width: 100%;
   padding: 30px;
   text-align: center;
   transition: color;
-  color: rgb(6, 209, 255);
+  color: rgb(43, 74, 55);
   text-decoration: none;
+  text-shadow: 2px 2px 4px #0be196;
 }
-
+.footer-nav a:hover {
+  color: #131e1a;
+}
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
 }
