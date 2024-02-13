@@ -4,10 +4,8 @@
   width: 70%;
 }
 section {
-  display: flex;
-  flex-direction: row; /* או column, תלוי בכיוון שאתה רוצה לסדר את האלמנטים */
-  justify-content: center; /* ממרכז את האלמנטים בציר הראשי */
-  align-items: center; /* ממרכז את האלמנטים בציר המשני */
+  flex-direction: row;
+  align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
